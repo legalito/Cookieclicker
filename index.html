@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/style.css" rel="stylesheet" />
+    <title>Fantasy Forges Game</title>
+</head>
+<body>
+
+    <div id="gameArea">
+        <div id="sidebar">
+            <div >Score: 0</div>
+            <div class="section">
+                <h2>Player Information</h2>
+                <p class="username">Username: ExampleUser</p>
+                <p id="score">Score: 0</p>
+                <p>Last Login: 2023-12-10 15:30:00</p>
+            </div>
+
+            <div class="section" id="improvementSection">
+                <h2>Improvements Section</h2>
+                <p>Improvement Name: Masterful Anvil</p>
+                <p>Description: An improved anvil that boosts your clicking efficiency.</p>
+                <p>Click Bonus: +2 points per click</p>
+                <p>Cost: 30 Forge Shards</p>
+            </div>
+            <div class="section" id="equipmentSection">
+                <h2>Equipment Section</h2>
+                <p>Equipment Name: Sword of Power</p>
+                <p>Description: A mighty sword that enhances your forging abilities.</p>
+                <p>Point Rate: +5 points per second</p>
+                <p>Cost: 50 Forge Shards</p>
+            </div>
+
+            <div class="section" id="heroSection">
+                <h2>Hero Forgers Section</h2>
+                <p>Hero Name: Legendary Blacksmith</p>
+                <p>Description: A skilled blacksmith who forges legendary items.</p>
+                <p>Point Rate: +10 points per second</p>
+                <p>Cost: 100 Forge Shards</p>
+            </div>
+        </div>
+
+        <div id="mainContent">
+            
+
+            <div id="clickableArea">
+                <p>Click here to forge!</p>
+                <!-- Ajoutez ici l'image de l'enclume ou un autre élément visuel -->
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <p>&copy; 2023 Fantasy Forges Game</p>
+    </div>
+</body>
+<script>
+    const username = localStorage.getItem('username');
+    const divUsername = document.querySelector('.username');
+    divUsername.textContent = `Username: ${username}`;
+</script>
+<script type="module" src="./js/main.js"></script>
+</html>
